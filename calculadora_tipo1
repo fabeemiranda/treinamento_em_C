@@ -1,0 +1,52 @@
+include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+
+	float var1, var2, result;
+	int opc;
+	
+	printf ("\n\tBem-vindo a calculadora\n");
+	
+	printf ("\n\tOpcao 1 - Soma");
+	printf ("\n\tOpcao 2 - Subtracao");
+	printf ("\n\tOpcao 3 - Multiplicacao");
+	printf ("\n\tOpcao 4 - Divisao\n");
+	
+	printf ("\n\tEscolha uma opcao de calculo\t");
+		scanf ("%d", &opc);
+	
+	printf ("\n\tDigite o primeiro valor\t");
+		scanf ("%f", &var1);
+	
+	printf ("\n\tDigite o segundo valor\t");
+		scanf ("%f", &var2);
+		
+	if (opc == 1) {
+		result = var1 + var2;
+		printf ("\n\tO resultado e: %.2f\n\n", result);
+	}
+		
+	else if (opc == 2) {
+		result = var1 - var2;
+		printf ("\n\tO resultado e: %.2f\n\n", result);
+	}
+		
+	else if (opc == 3) {
+		result = var1 * var2;
+		printf ("\n\tO resultado e: %.2f\n\n", result);
+	}
+		
+	else if (opc == 4) {
+		result = var1 / var2;
+		printf ("\n\tO resultado e: %.2f\n\n", result);
+	}
+	
+	else {
+		printf ("\n\tEscolha uma opcao valida!\n\n");
+	}
+			
+	
+	
+	system("pause");
+}
