@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main() {
+	
+	float nota1, nota2, total;
+	
+	printf ("\n\tDigite a primeira nota\t");
+	scanf ("%f", &nota1);
+	printf ("\n\tDigite a segunda nota\t");
+	scanf ("%f", &nota2);
+	
+	total = nota1 + nota2;
+	
+	printf ("\n\tA soma das notas e:\n");
+	printf ("\n\t%.1f\n\n", total);
+	system("pause");
+}
