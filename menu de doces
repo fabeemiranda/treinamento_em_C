@@ -1,0 +1,31 @@
+#include<stdio.h>
+
+int main() {
+	
+	int menu;
+	printf ("\n\tQual seu doce preferido?\n");
+	printf ("\n\t (1) Bolo\n\t (2) Torta\n\t (3) Pudim\n\t (4) Cuzcuz\n\n\t Escolha uma opcao: ");
+	scanf ("%d", &menu);
+	
+	if (menu == 1) {
+		printf ("\n\tParabens! Voce gosta de bolo!\n\n");
+	}
+	
+	else if (menu == 2) {
+		printf ("\n\tParabens! Voce gosta de Torta!\n\n");
+	}
+	
+	else if (menu == 3) {
+		printf ("\n\tParabens! Voce gosta de Pudim!\n\n");
+	}
+	
+	else if (menu == 4) {
+		printf ("\n\tParabens! Voce gosta de Cuzcuz!\n\n");
+	}
+	
+	else {
+		printf ("\n\tEscolha um numero valido!\n\n");
+	}
+	
+	system("pause");
+}
