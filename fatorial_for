@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main() {
+	
+	int num, fat, cont;
+	
+	printf ("\n\tDigite um numero para calcular o fatorial: ");
+	scanf ("%d", &num);
+	
+	fat = 1;
+	
+	for(cont = 1; cont <= num; cont++) {
+    	fat = fat * cont;
+ }
+	printf ("\n\tO fatorial de %d e: %d \n", num, fat);	
+	system("pause");
+	
+}
