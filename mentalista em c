@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>// necessário p/ as funções rand() e srand()
+#include<stdio.h>
+#include<time.h>//necessário p/ função time()
+
+int main () {
+	
+	int secreto, chute, cont;
+	
+//	gerar número secreto aleatório de 1 a 10 e atribuir a uma variável
+	srand(time(NULL));
+	secreto = rand() % 10;
+    
+       
+    printf("..::Criado por Fabee Miranda::..\n\n");
+    
+    //	mostra número secreto para validação de testes. Deve ser retirado.
+    printf("\n\tEsse e o numero secreto: %d\n\n", secreto);
+    
+    printf("\n\tAdivinhe o numero secreto!\n\n");
+
+	for (cont = 0; cont < 3; cont++) {
+    	printf("\n\tChute um numero de 0 a 10: ");
+	    scanf("%d", &chute);
+	    
+	    
+	    if (chute == secreto) {
+    		printf("\n\tParabens, voce acertou!! O numero secreto e: %d\n\n", secreto);
+    		cont = 3;
+    		
+    	
+        } else if (cont < 2) { 
+    		printf("\n\tVoce errou! Tente novamente.\n\n");
+  
+	    } else {	    	
+			printf("\n\tQue pena, nao foi dessa vez!\n\n");
+		}
+	        
+	}
+ 
+	system("pause");
+
+}
